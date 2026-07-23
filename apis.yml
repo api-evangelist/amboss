@@ -1,8 +1,27 @@
 aid: amboss
-name: Amboss
-description: 'Amboss is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amboss.png
+name: AMBOSS
+description: 'AMBOSS is a Berlin-based (AMBOSS SE) digital medical knowledge platform
+  used by medical students, physicians, educators, and healthcare institutions worldwide.
+  It combines a physician-authored medical library, exam-style Qbanks with AI-powered
+  analytics, and a point-of-care clinical reference tool, plus AI features (LiSA)
+  for evidence-based clinical decision support. AMBOSS sells consumer memberships
+  and institutional licenses to medical schools, residency programs, and hospitals.
+  It is a Partech portfolio company. This profile was enriched from AMBOSS'' public
+  web and security surface; the medical platform publishes no public developer API
+  (its amboss-mededu GitHub org hosts internal tooling), so this repo carries identity
+  and security artifacts rather than API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/amboss/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +35,11 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Medical Education
+- Medical Knowledge
+- Clinical Reference
+- Physicians
+- EdTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.amboss.com/
+- type: Pricing
+  url: https://www.amboss.com/us/pricing
+- type: SignUp
+  url: https://next.amboss.com/us/registration
+- type: Login
+  url: https://next.amboss.com/us/login
+- type: TermsOfService
+  url: https://www.amboss.com/us/legal/terms
+- type: PrivacyPolicy
+  url: https://www.amboss.com/us/legal/privacy
+- type: Support
+  url: https://support.amboss.com/hc/en-us
+- type: GitHubOrganization
+  url: https://github.com/amboss-mededu
+- type: Security
+  url: https://www.amboss.com/.well-known/security.txt
+- type: SecurityTxt
+  url: well-known/amboss-security.txt
+- type: WellKnown
+  url: well-known/amboss-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/amboss-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amboss-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
